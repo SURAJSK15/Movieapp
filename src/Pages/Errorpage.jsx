@@ -11,7 +11,7 @@ export default function ErrorPage() {
                 <h1 >Page not found</h1>
                 <p >Sorry, we couldn’t find the page you’re looking for.</p>
                 <div class="goback-btn">
-                    <NavLink to="/"> Go back home </NavLink>
+                    <NavLink to="/"> Go Home Page </NavLink>
                   
                 </div>
             </div>
