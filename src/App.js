@@ -9,7 +9,7 @@ import Register from './Pages/Register';
 import Movie from './Pages/Movie';
 import MywatchList from './feature/Watchlist/Mywatchlist';
 import Protected from './Pages/Protected';
-import ErrorPage from './Pages/Errorpage';
+// import ErrorPage from './Pages/Errorpage';
 
 
 
@@ -31,10 +31,7 @@ const router = createBrowserRouter([
     path: "/Mywatchlist",
     element: <Protected><MywatchList></MywatchList></Protected>,
   },
-  {
-    path: "*",
-    element: <ErrorPage></ErrorPage>,
-  },
+  
 
 ])
 
