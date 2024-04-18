@@ -14,32 +14,29 @@ import ErrorPage from './Pages/Errorpage';
 
 
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LogIn> </LogIn>,
+  },
+  {
+    path: "/Register",
+    element: <Register></Register>,
+  },
+  {
+    path: "/Movie",
+    element:<Protected> <Movie></Movie></Protected>,
+  },
+  {
+    path: "/Mywatchlist",
+    element: <Protected><MywatchList></MywatchList></Protected>,
+  },
+  {
+    path: "*",
+    element: <ErrorPage></ErrorPage>,
+  },
 
-const router = createBrowserRouter({
-  basename: "/", 
-  routes: [
-    {
-      path: "/",
-      element: <LogIn></LogIn>,
-    },
-    {
-      path: "/Register",
-      element: <Register></Register>,
-    },
-    {
-      path: "/Movie",
-      element: <Protected><Movie></Movie></Protected>,
-    },
-    {
-      path: "/Mywatchlist",
-      element: <Protected><MywatchList></MywatchList></Protected>,
-    },
-    {
-      path: "/Register",
-      element: <ErrorPage></ErrorPage>,
-    },
-  ]
-});
+])
 
 
 function App() {
