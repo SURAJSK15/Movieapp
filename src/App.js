@@ -14,26 +14,27 @@ import Protected from './Pages/Protected';
 
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <LogIn> </LogIn>,
-  },
-  {
-    path: "/Register",
-    element: <Register></Register>,
-  },
-  {
-    path: "/Movie",
-    element:<Protected> <Movie></Movie></Protected>,
-  },
-  {
-    path: "/Mywatchlist",
-    element: <Protected><MywatchList></MywatchList></Protected>,
-  },
-  
-
-])
+const router = createBrowserRouter({
+  basename: "/", // Add basename here
+  routes: [
+    {
+      path: "/",
+      element: <LogIn></LogIn>,
+    },
+    {
+      path: "/Register",
+      element: <Register></Register>,
+    },
+    {
+      path: "/Movie",
+      element: <Protected><Movie></Movie></Protected>,
+    },
+    {
+      path: "/Mywatchlist",
+      element: <Protected><MywatchList></MywatchList></Protected>,
+    },
+  ]
+});
 
 
 function App() {
