@@ -488,6 +488,35 @@ a:hover {
 .check-btn {
   background-color: #46ff46;
 }
+.error-page{
+  text-align: center;
+  margin-top: 100px;
+}
+.error-page h6{
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--red--color);
+}
+.error-page h1{
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.error-page p{
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.goback-btn {
+  padding: 10px 30px;
+  background-color: var(--gray--color);
+  display: inline-block;
+  border-radius: 5px;
+
+}
+.goback-btn a {
+  color: var(--white--color);
+}
 
 @media screen and (max-width: 1200px) {
   .movie-section-serach input {
